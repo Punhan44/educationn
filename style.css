@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+/* Header */
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 999;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 177px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 76%;
+}
+
+.col-lg-9 {
+    flex: 70%;
+}
+.col-lg-3 {
+    flex: 10%;
+}
+.login {
+    flex-basis: 20%;
+    display: flex;
+    gap: 16px;
+}
+
+/* header-context */
+.header-context{
+    background: url(images/Education_pillars.jpg) top center / cover;
+    height: 600px ;
+    clip-path: polygon(100% 0, 100% 100%, 83% 95%, 66% 95%, 49% 93%, 33% 96%, 16% 93%, 0 89%, 0 0);
+}
+
+ul.navbar-menu a {
+    color: #fff;
+    font-size: 22px;
+    transition: .3s;
+   
+}
+ul.navbar-menu a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login a {
+    color: #fff;
+    font-size: 12px;
+    background: rgba(113, 121, 129, 0.116);
+    width: 58px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    margin-top: -10px;
+    transition: .3s;
+}
+.login a:hover{
+    background: rgb(113, 121, 129);
+}
+
+.header-section {
+    position: absolute;
+    top: 20rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+}
+.header-section h1 {
+    padding-bottom: 49px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 54px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+.header-section p {
+    font-size: 29px;
+    line-height: 2rem;
+    padding-bottom: 54px;
+    color: rgba(255, 255, 255, 0.63);
+text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+/* section-about */
+.section-about{
+    background: url(images/dottet_bg.png) bottom center / cover;
+}
+
+.col-lg-12 {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.col-md-12 {
+    position: relative;
+    flex: 100%;
+    max-width: 100%;
+}
+.section-about {
+    background: url(images/dottet_bg.png) bottom center / cover;
+    padding-top: 90px;
+}
+.col-lg-12 h1 {
+    padding-bottom: 49px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 54px;
+    color: #444444;
+
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.col-lg-12 p {
+    font-size: 18px;
+    width: 98%;
+    text-align: start;
+    padding-bottom: 5rem;
+    padding-left: 57px;
+    color: #777;
+}
+.col-image img {
+    -webkit-border-radius: 54px;
+    -moz-border-radius: 54px;
+    border-radius: 54px;
+    width: 97%;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+i.fas.fa-play-circle {
+    color: #f58634;
+    font-size: 5rem;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    border-radius: 14%;
+}
+
+
+/* section-courses */
+.section-courses{
+    padding-top: 90px;
+}
+
+.col-md-4{
+    flex: 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.col-md-4 img {
+    height: 220px;
+    width: 90%;
+    border-radius: 29%;
+   
+}
+.cours {
+    padding: 23px 0;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cours img:hover{
+    transform: scale(1.1);
+}
+.col-md-4 h3 {
+    font-size: 40px;
+    color: #666;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 8px;
+}
+.cours-teachers img {
+    width: 347px;
+    height: 347px;
+    border-radius: 50%;
+}
+
+.teacher {
+    text-align: center !important;
+    margin-top: -36px;
+}
+
+.teacher::after {
+    content: "";
+    width: 200px;
+    height: 3px;
+    background: #8a5da4;
+    display: flex;
+    margin: 10px auto;
+    line-height: 12px;
+}
+/* SECTİON_TİME */
+.section-time {
+    padding-top: 111px;
+}
+
+.cours-time-bg {
+    background: url(images/cours_bg.jpg);
+    min-height: 780px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.tine-table {
+    background: rgba(255,255,255,.85);
+    min-height: 588px;
+    margin-top: 110px;
+    padding: 71px 200px;
+   
+}
+.tine-table ul{
+    width: 100%;
+}
+.tine-table ul li{
+        width: 50%;
+        float: left;
+        font-size: 30px;
+        font-weight: 300;
+        color: #000;
+        line-height: 60px;
+}
+
+/* FOOTER */
+footer{
+    background: #3a3a3a;
+}
+.col-md-3 {
+    flex: 25%;
+}
+
+.col-md-3 h1 {
+    color: #fff;
+    line-height: 3;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+    font-size: 22px;
+    margin-left: 12px;
+
+}
+
+i.fab.fa-facebook-f {
+    color: #4267B2;
+    background: white;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+i.fab.fa-instagram {
+    color: #F56040;
+    background: white;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+i.fab.fa-youtube {
+    color: #FF0000;
+    background: white;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+i.fab.fa-whatsapp {
+    color: #25D366;
+      background: white;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+i{
+    transition: .4s;
+}
+.social-icons i:hover{
+    background: rgba(255, 255, 255, 0);
+}
+
+.comunucation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 23px;}
+.comunucation a{
+    color: #fff;
+}
+.comunucation i {
+    color: #fff;
+    padding-right: 14px;
+}
+h1.connect {
+    margin-left: 63px;
+}
+.col-md-3 p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 33px;
+}
+.footer-row {
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    padding: 22px 0;
+}
