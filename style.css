@@ -24,6 +24,7 @@ header{
     padding-left: 15px;
 }
 .row {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
    align-items: center;
@@ -48,6 +49,7 @@ ul.navbar-menu {
 
 .col-lg-9 {
     flex: 70%;
+    position: relative;
 }
 .col-lg-3 {
     flex: 10%;
@@ -69,11 +71,72 @@ ul.navbar-menu a {
     color: #fff;
     font-size: 22px;
     transition: .3s;
-   
+    position: relative;
+    transition: .4s;
+
+
 }
 ul.navbar-menu a:hover{
     color: rgba(255, 255, 255, 0.5);
 }
+ul.menu-bar {
+    position: absolute;
+    background: #fff;
+    top: 30px;
+    left: 27%;
+    transform: translateY(20px);
+    width: 20%;
+ opacity: 0;
+ pointer-events: none;
+    transition: .3s;
+
+}
+.nav-link:hover > ul.menu-bar{
+    opacity: 1;
+    transform: translate(0);
+    pointer-events: auto;
+}
+.nav-link a{
+    display: flex;
+    align-items: center;
+}
+.nav-link a i{
+    padding-left: 7px;
+}
+ul.menu-bar li {
+    padding: 3px 10px;
+    width: 100%;
+    cursor: pointer;
+
+}
+ul.menu-bar :hover{
+    background: #768b9c;
+    color: black !important;
+
+}
+.dropdown-link:first-child:hover ~ .up{
+  background-color:#768b9c;
+}
+ul.menu-bar li a{
+    font-size: 18px;
+    width: 100%;
+    color: black;
+}
+
+.up{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: -5.5px;
+    left: 78px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .3s;
+    z-index: -1;
+}
+
+
 
 .login a {
     color: #fff;
@@ -157,7 +220,7 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
     -webkit-border-radius: 54px;
     -moz-border-radius: 54px;
     border-radius: 54px;
-    width: 97%;
+    width: 100%;
 }
 
 .play-icon {
@@ -263,6 +326,7 @@ footer{
 }
 .col-md-3 {
     flex: 25%;
+    text-align: center;
 }
 
 .col-md-3 h1 {
@@ -274,8 +338,8 @@ footer{
     justify-content: space-between;
     width: 62%;
     font-size: 22px;
-    margin-left: 12px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 i.fab.fa-facebook-f {
@@ -328,7 +392,7 @@ i{
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     font-size: 23px;}
 .comunucation a{
     color: #fff;
@@ -337,9 +401,7 @@ i{
     color: #fff;
     padding-right: 14px;
 }
-h1.connect {
-    margin-left: 63px;
-}
+
 .col-md-3 p {
     color: #fff;
     font-size: 24px;
@@ -356,4 +418,132 @@ p.copyright {
     color: #fff;
     font-size: 27px;
     padding: 22px 0;
+}
+/* toggler */
+.menu-toggle {
+    position: absolute;
+    left: 94%;
+    display: none;
+    top: 37px;
+    cursor: pointer;
+
+}
+
+
+.fa-times{
+    color: #fff;
+    font-size: 34px; 
+}
+i.fas.fa-bars {
+    color: #fff;
+    font-size: 34px;
+}
+
+
+
+/* MEDIAQUERY */
+@media screen and (max-width:1066px) {
+    .mediaquery{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 54px;
+    }
+    .col-md-4{
+        flex: 45%;
+       max-width: 45%;
+    }
+    .col-md-3{
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+   
+  
+    
+}
+
+@media screen and (max-width:966px){
+    .menu-toggle{
+        display: block;
+    }
+    .col-lg-9{
+        position: absolute;
+        top: 140px;
+       display: none;
+       background: #02354a;
+       width: 105%;
+       height: calc(1000vh - 3rem);
+
+        margin-left: -16px;
+        text-align: start;
+    }
+    .show-sidebar{
+        display: block;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        margin-top: 40px;
+    }
+    ul.navbar-menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .login{
+        display: inline-block;
+    }
+    .login a{
+        padding: 10px;
+        font-size: 20px;
+    }
+    ul.navbar-menu li {
+        padding: 20px;
+    }
+    .header-section{
+        margin-top: 24rem;
+    }
+    .header-context{
+        height: 1000px  ;
+    }
+    .tine-table ul li {
+        width: 50%;
+        float: left;
+        font-size: 23px;
+        font-weight: 300;
+        color: #000;
+        line-height: 60px;
+    }
+    ul.menu-bar {
+        position: initial;
+        background: rgba(255, 255, 255, 0);
+        top: initial;
+        left: initial;
+        transform: translateY(0);
+        width: 100%;
+        text-align: initial;
+        opacity: 1;
+        pointer-events: none;
+        transition: .3s;
+    }
+}
+@media screen and (max-width:737px){
+    .tine-table ul li {
+        width: 100%;
+        float: left;
+        font-size: 22px;
+        font-weight: 300;
+        color: #000;
+        line-height: 60px;
+    }
+    .cours-time-bg {
+        background: url(images/cours_bg.jpg) ;
+        min-height: 1100px;
+        width: 100%;
+        margin-top: 50px;
+    }
 }
