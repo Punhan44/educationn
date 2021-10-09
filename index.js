@@ -12,3 +12,14 @@ menu.addEventListener("click",function(){
 
    sidebar.classList.toggle("show-sidebar")
 })
+
+
+
+var medianav = document.querySelector(".nav-link-open");
+var mediasidebar = document.querySelector(".menu-bar");
+var colmd = document.querySelector(".col-lg-9");
+
+medianav.addEventListener("click" , function (){
+  mediasidebar.classList.toggle("show-sidebar")
+  colmd.classList.toggle("col-lg-9-open")
+})
