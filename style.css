@@ -7,6 +7,7 @@
 }
 body{
     overflow-x: hidden;
+   
     font-size: 14px;
 }
 
@@ -24,7 +25,6 @@ header{
     padding-left: 15px;
 }
 .row {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
    align-items: center;
@@ -86,6 +86,7 @@ ul.menu-bar {
     left: 27%;
     transform: translateY(20px);
     width: 20%;
+    
  opacity: 0;
  pointer-events: none;
     transition: .3s;
@@ -117,18 +118,13 @@ ul.menu-bar :hover{
 .dropdown-link:first-child:hover ~ .up{
   background-color:#768b9c;
 }
-ul.menu-bar li a{
-    font-size: 18px;
-    width: 100%;
-    color: black;
-}
 
 .up{
     position: absolute;
     width: 14px;
     height: 14px;
     top: -5.5px;
-    left: 78px;
+    left: 50%;
     background-color: #fff;
     transform: rotate(45deg);
     cursor: pointer;
@@ -422,7 +418,7 @@ p.copyright {
 /* toggler */
 .menu-toggle {
     position: absolute;
-    left: 94%;
+    left: 90%;
     display: none;
     top: 37px;
     cursor: pointer;
@@ -473,19 +469,29 @@ video{
     .menu-toggle{
         display: block;
     }
+    ul.menu-bar {
+        display: none;
+    }
+    .up{
+        display: none;
+    }
     .col-lg-9{
         position: absolute;
-        top: 140px;
+        top: 136px;
        display: none;
        background: #02354a;
-       width: 105%;
-       height: calc(1000vh - 3rem);
+       width: 100%;
+       height: calc(111vh - 3rem);
 
         margin-left: -16px;
         text-align: start;
     }
+
+    .col-lg-9-open{
+     height: calc(223vh - 3rem);
+    }
     .show-sidebar{
-        display: block;
+        display: block !important; 
     }
     .nav-menu {
         display: flex;
@@ -509,7 +515,7 @@ video{
         padding: 20px;
     }
     .header-section{
-        margin-top: 24rem;
+        margin-top: 5rem;
     }
     .header-context{
         height: 1000px  ;
@@ -535,19 +541,120 @@ video{
         transition: .3s;
     }
 }
-@media screen and (max-width:737px){
+@media screen and (max-width:746px){
     .tine-table ul li {
-        width: 100%;
+        width: 50%;
         float: left;
         font-size: 22px;
         font-weight: 300;
         color: #000;
-        line-height: 60px;
+        line-height: 65px;
     }
-    .cours-time-bg {
-        background: url(images/cours_bg.jpg) ;
-        min-height: 1100px;
-        width: 100%;
-        margin-top: 50px;
+
+    .tine-table {
+        background: rgba(255,255,255,.85);
+        min-height: 588px;
+        margin-top: 110px;
+        padding: 71px 139px;
+    }
+    .col-lg-12 p {
+        font-size: 18px;
+        width: 97%;
+        text-align: start;
+        padding-bottom: 5rem;
+        padding-left: 87px;
+        color: #777;
+    }
+    
+}
+
+@media screen and (max-width:670px){
+    .col-md-4 {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .footer-row {
+        padding: 48px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 59px;
+    }
+    .col-md-3 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:623px){
+    .tine-table {
+        background: rgba(255,255,255,.85);
+        min-height: 588px;
+        margin-top: 110px;
+        padding: 71px 52px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width:500px){
+    .header-section h1 {
+        padding-bottom: 49px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 37px;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    }
+
+    .col-lg-12 p {
+        font-size: 18px;
+        width: 97%;
+        text-align: start;
+        padding-bottom: 5rem;
+        padding-left: 54px;
+        color: #777;
+    }
+    .col-lg-12 h1 {
+        padding-bottom: 49px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 30px;
+        color: #444444;
+        text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+    }
+    .col-lg-12 p {
+        font-size: 15px;
+        width: 97%;
+        text-align: start;
+        padding-bottom: 5rem;
+        padding-left: 54px;
+        color: #777;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .tine-table ul li {
+        width: 50%;
+        float: left;
+        font-size: 16px;
+        font-weight: 300;
+        color: #000;
+        line-height: 65px;
+    }
+    .col-md-4 h3 {
+        font-size: 29px;
+        color: #666;
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 8px;
+    }
+    .col-lg-12 p {
+        font-size: 10px;
+        width: 97%;
+        text-align: start;
+        padding-bottom: 5rem;
+        padding-left: 54px;
+        color: #777;
     }
 }
