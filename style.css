@@ -83,7 +83,7 @@ ul.menu-bar {
     position: absolute;
     background: #fff;
     top: 30px;
-    left: 27%;
+    left: 25%;
     transform: translateY(20px);
     width: 20%;
     
@@ -91,6 +91,10 @@ ul.menu-bar {
  pointer-events: none;
     transition: .3s;
 
+}
+ul.menu-bar.show-sidebar li a {
+    color: black;
+    font-size: 16px;
 }
 .nav-link:hover > ul.menu-bar{
     opacity: 1;
@@ -471,6 +475,10 @@ video{
     }
     ul.menu-bar {
         display: none;
+    }
+    ul.menu-bar.show-sidebar li a {
+        color: #fff;
+        font-size: 16px;
     }
     .up{
         display: none;
