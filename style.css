@@ -44,7 +44,7 @@ header{
 ul.navbar-menu {
     display: flex;
     justify-content: space-between;
-    flex-basis: 76%;
+    flex-basis: 90%;
 }
 
 .col-lg-9 {
@@ -62,10 +62,53 @@ ul.navbar-menu {
 
 /* header-context */
 .header-context{
-    background: url(images/Education_pillars.jpg) top center / cover;
-    height: 600px ;
-    clip-path: polygon(100% 0, 100% 100%, 83% 95%, 66% 95%, 49% 93%, 33% 96%, 16% 93%, 0 89%, 0 0);
+    position: relative;
 }
+.cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 99%;
+    width: 100%;
+    background-color: #02354a5c;
+    clip-path:polygon(100% 0, 100% 100%, 83% 95%, 66% 95%, 49% 93%, 33% 94%, 15% 89%, 0 89%, 0 0);
+}
+.header-context .slider img{
+width: 100%;
+    height: 600px ;
+    clip-path:polygon(100% 0, 100% 100%, 83% 95%, 66% 95%, 49% 93%, 33% 94%, 15% 89%, 0 89%, 0 0);
+   
+}
+.slider-button{
+    width: 100%;
+position: absolute;
+top: 50%;
+z-index: 999;
+}
+button.left-button {
+    width: 69px;
+    font-size: 39px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.right-button{
+float: right;
+width: 69px;
+font-size: 39px;
+color: white;
+background: none;
+border: none;
+cursor: pointer;
+}
+.header-context .slider::after{
+    content: "";
+    display: block;   
+    width: 100%;
+    height: 100%;
+    background:#02354a59
+  }
 
 ul.navbar-menu a {
     color: #fff;
@@ -78,6 +121,10 @@ ul.navbar-menu a {
 }
 ul.navbar-menu a:hover{
     color: rgba(255, 255, 255, 0.5);
+}
+ul.menu-bar a {
+    color: black;
+    font-size: 16px;
 }
 ul.menu-bar {
     position: absolute;
@@ -151,7 +198,7 @@ ul.menu-bar :hover{
     transition: .3s;
 }
 .login a:hover{
-    background: rgb(113, 121, 129);
+   background-color:  rgb(137 164 177 / 65%);
 }
 
 .header-section {
@@ -175,8 +222,8 @@ ul.menu-bar :hover{
     font-size: 29px;
     line-height: 2rem;
     padding-bottom: 54px;
-    color: rgba(255, 255, 255, 0.63);
-text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+    color: rgb(255, 255, 255);
+text-shadow: 0 0 15px rgba(255, 255, 255, 0.733), 0 0 10px rgba(255,255,255,.5);
 }
 
 /* section-about */
@@ -470,6 +517,21 @@ video{
 }
 
 @media screen and (max-width:966px){
+    .cover {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 60%;
+        width: 100%;
+        background-color: #02354a5c;
+        clip-path: polygon(100% 0, 100% 100%, 83% 95%, 66% 95%, 49% 93%, 33% 94%, 15% 89%, 0 89%, 0 0);
+    }
+    .slider-button {
+    width: 100%;
+    position: absolute;
+    top: 33%;
+    z-index: 888;
+}
     .menu-toggle{
         display: block;
     }
@@ -523,7 +585,7 @@ video{
         padding: 20px;
     }
     .header-section{
-        margin-top: 5rem;
+        margin-top: 0;
     }
     .header-context{
         height: 1000px  ;
