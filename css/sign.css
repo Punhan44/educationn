@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
 ul.navbar-menu a {
     color: black !important;
 }
@@ -6,14 +10,15 @@ ul.navbar-menu a:hover {
 }
 header{
     box-shadow: 13px 2px 5px 0px rgb(0 0 0 / 75%);
-    background-color: #fff;
+    background-color: #334257 !important;
    
    
 }
 
+
 section{
  
-    background-color: blanchedalmond;
+    background-color: #EED6D3;
     padding: 40px 0;
     margin-top: 12%;
 }
@@ -27,7 +32,7 @@ form {
     margin-right: auto;
     margin-left: auto;
     padding: 80px;
-    background: #ffffff;
+    background: #A49393;
     box-shadow: 0px 0px 30px 0px gainsboro;
     border-radius: 10px;
 
@@ -38,6 +43,7 @@ form {
     margin-bottom: 59px;
     font-size: 18px;
     font-weight: 500;
+    color: #fff;
 }
 .sign h2 {
     text-align: center;
@@ -111,6 +117,7 @@ select {
 }
 .sign-button {
     text-align: center;
+    flex: 100%;
 }   
 .sign-button button {
     cursor: pointer;
@@ -125,4 +132,10 @@ select {
     background-image: linear-gradient(
 -180deg, #6b0849 0%, #C01F9E 100%);
     box-shadow: 0 1rem 1.25rem 0 rgb(22 75 195 / 50%), 0 -0.25rem 1.5rem rgb(110 15 155) inset, 0 0.75rem 0.5rem rgb(255 255 255 / 40%) inset, 0 0.25rem 0.5rem 0 rgb(180 70 207) inset;
+}
+.sign-header{
+    background: #E8B4B8 !important;
+}
+.sign-footer{
+    background: #67595E;
 }
