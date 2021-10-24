@@ -58,21 +58,21 @@ var settings={
   random:false
 }
 
-init(settings)
+init(settings);
 
 
 
 
-document.querySelector(".fa-arrow-left").addEventListener('click',function(){
+document.querySelector(".fa-arrow-left").addEventListener("click", function(){
 index --;
 showSlide(index);
-console.log(index )
+
 });
 
-document.querySelector(".fa-arrow-right").addEventListener('click',function(){
+document.querySelector(".fa-arrow-right").addEventListener("click",function(){
   index ++;
   showSlide(index);
-console.log(index);
+
 });
 
 document.querySelectorAll(".arrow").forEach(function(item){
