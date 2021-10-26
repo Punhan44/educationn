@@ -287,7 +287,7 @@ ul.menu-bar :hover {
     width: 98%;
     text-align: start;
     padding-bottom: 5rem;
-    padding-left: 57px;
+    padding-left: 8px;
     color: #777;
 }
 
@@ -521,7 +521,7 @@ p.copyright {
     position: absolute;
     left: 90%;
     display: none;
-    top: 37px;
+    top: 48px;
     cursor: pointer;
     z-index: 777;
 }
@@ -590,6 +590,7 @@ video {
 
     .menu-toggle {
         display: block;
+        z-index: 999;
     }
 
     ul.menu-bar {
@@ -681,7 +682,7 @@ video {
     }
 }
 
-@media screen and (max-width:746px) {
+@media screen and (max-width:768px) {
     .tine-table ul li {
         width: 50%;
         float: left;
@@ -703,7 +704,7 @@ video {
         width: 97%;
         text-align: start;
         padding-bottom: 5rem;
-        padding-left: 87px;
+        padding-left: 8px;
         color: #777;
     }
 
@@ -728,6 +729,14 @@ video {
         flex: 100%;
         max-width: 100%;
     }
+    .tine-table ul li {
+        width: 50%;
+        float: left;
+        font-size: 20px;
+        font-weight: 300;
+        color: #000;
+        line-height: 65px;
+    }
 }
 
 @media screen and (max-width:623px) {
@@ -738,6 +747,7 @@ video {
         padding: 71px 52px;
         padding-right: 0px;
     }
+
     button.left-button {
         width: 27px;
         font-size: 18px;
@@ -746,9 +756,18 @@ video {
         border: none;
         cursor: pointer;
     }
-    .right-button{
+
+    .right-button {
         width: 27px;
-        font-size:18px;
+        font-size: 18px;
+    }
+    .tine-table ul li {
+        width: 50%;
+        float: left;
+        font-size: 19px;
+        font-weight: 300;
+        color: #000;
+        line-height: 65px;
     }
 }
 
@@ -762,14 +781,6 @@ video {
         text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
     }
 
-    .col-lg-12 p {
-        font-size: 18px;
-        width: 97%;
-        text-align: start;
-        padding-bottom: 5rem;
-        padding-left: 54px;
-        color: #777;
-    }
 
     .col-lg-12 h1 {
         padding-bottom: 49px;
@@ -782,12 +793,13 @@ video {
 
     .col-lg-12 p {
         font-size: 15px;
-        width: 97%;
+        width: 100%;
         text-align: start;
         padding-bottom: 5rem;
-        padding-left: 54px;
+        padding-left: 8px;
         color: #777;
     }
+
     button.left-button {
         width: 27px;
         font-size: 18px;
@@ -796,9 +808,10 @@ video {
         border: none;
         cursor: pointer;
     }
-    .right-button{
+
+    .right-button {
         width: 27px;
-        font-size:18px;
+        font-size: 18px;
     }
 }
 
@@ -821,11 +834,13 @@ video {
     }
 
     .col-lg-12 p {
-        font-size: 10px;
-        width: 97%;
+        font-size: 12px;
+        width: 100%;
         text-align: start;
-        padding-bottom: 5rem;
-        padding-left: 54px;
+        padding-bottom: 3rem;
+        padding-left: 8px;
+        padding-top: 6px;
+        padding-right: 1px;
         color: #777;
     }
 
@@ -837,10 +852,10 @@ video {
         border: none;
         cursor: pointer;
     }
-    
 
-.right-button{
-    width: 27px;
-    font-size:18px;
-}
+
+    .right-button {
+        width: 27px;
+        font-size: 18px;
+    }
 }
