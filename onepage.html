@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/sign.css">
     <link rel="stylesheet" href="css/teaching.css">
-    <link rel="stylesheet" href="css/onepage.css">
+    <link rel="stylesheet" href="css/pagination.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Pem Akademiya</title>
 </head>
 <body>
-    <header class="onepage-header">
+    <header class="teaching-header">
         <div class="container">
             <div class="row">
                 <div class="menu-toggle" >
@@ -33,6 +35,7 @@
                         <li class="nav-link" ><a class="nav-link-open" href="teaching.html">Tədris <i class="fas fa-caret-down"></i></a>
                         <ul class="menu-bar">
                           
+                            
                             <li class="dropdown-link"><a href="onepage.html">Abituriyent Hazırlığı</a></li>
                             <li><a href="onepage.html">İbtidai Hazırlıq</a></li>
                             <li><a href="onepage.html">Məktəbəqədər Hazırlıq</a></li>
@@ -49,7 +52,7 @@
 
                         </ul>
                         </li>
-                      
+                       
                         <li><a href="contact.html">Bizimlə Əlaqə</a></li>
                         <li><a href="sign.html">Qeydiyyat</a></li>
                     </ul>
@@ -60,124 +63,206 @@
         </div>
     </header>
 
-    <!-- Section -->
-    <div class="onepage-section">
-        <div class="container">
-            <div class="section-body-row">
-                <div class="col-md-12 onepage-text">
-                  <h1>Dərslərimizin Keçirilmə Formaları</h1>
-                </div>
-                <div class="col-md-8">
-                    <div class="one-img">
-                        <img src="images/loqopediya.jpg" alt="">
-                    </div>
-                    <div class="one-context">
-                        <h1>Loqopediya</h1>
+<!-- Section-header -->
+<div class="section-header">
+    <h1>XİDMƏTLƏR</h1>
+</div>
+<!-- section body    -->
 
-                        <h3>Proqramın keçirilmə forması</h3>
-                        <ol class="one-text">
-                            <li>Adından da göründüyü kimi tam danışığa yönəlik tədris vəsaitidir;</li>
-                            <li>dasdfasd</li>
-                            <li>dasdfasd</li>
-                            <li>dasdfasd</li>
-                            <li>dasdfasd</li>
-                            <li>dasdfasd</li>
-                        </ol>
+<div class="section-body">
+    <div class="section-body-container " style="display:none"> 
+        <div class="section-body-row">
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
 
-                        <h3>Nəticələr</h3>
-                        <p>Proqramın sonunda tələbə göstərdiyi nəticədən asılı olaraq standart, gümüş və qızıl sertifikat və reportla təltif olunur. </p>
-                        <h3>Müəllim heyyəti</h3>
-                        <p>«Müəllimlərimiz yerli müəllimlərdir və hər birinin müvafiq beynəlxalq sertifikatları mövcuddur. Əlavə olaraq, müəllimlərimiz xüsusi imtahlar və demo dərslər vasitəsilə seçilir. Müəllimlər haqqında daha ətraflı məlumatı isə  əldə edə bilərsiniz».</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="section-col-md-3"><a href="onepage.html">
-                        <div class="section-card">
-                            <div class="card-img">
-                                <img src="images/mekteb6.jpeg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3>Abituriyent Hazırlığı</h3>
-                            </div>
-                            <div class="card-footer">
-                              <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
-                            </div>
-        
-                        </div></a>
-                    </div>
-                    <div class="section-col-md-3"><a href="onepage.html">
-                        <div class="section-card">
-                            <div class="card-img">
-                                <img src="images/mekteb6.jpeg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3>Abituriyent Hazırlığı</h3>
-                            </div>
-                            <div class="card-footer">
-                              <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
-                            </div>
-        
-                        </div></a>
-                    </div>
-                      <div class="section-col-md-3"><a href="onepage.html">
-                        <div class="section-card">
-                            <div class="card-img">
-                                <img src="images/mekteb6.jpeg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3>Abituriyent Hazırlığı</h3>
-                            </div>
-                            <div class="card-footer">
-                              <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
-                            </div>
-        
-                        </div></a>
-                    </div>
-                </div>
+                </div></a>
             </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            <div class="section-col-md-3"><a href="onepage.html">
+                <div class="section-card">
+                    <div class="card-img">
+                        <img src="images/mekteb6.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Abituriyent Hazırlığı</h3>
+                    </div>
+                    <div class="card-footer">
+                      <p><span>Qiymət:</span><strong>100 Manat</strong></p> 
+                    </div>
+
+                </div></a>
+            </div>
+            
+               
+            
+            
         </div>
+ 
     </div>
 
-   <!-- fOOTER -->
-   <footer class="onepage-footer"> 
-    <div class="container">
-        <div class="footer-row">
+
+</div>
            
-            <div class="col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/pem-removebg-preview.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <h1>Sosial Şəbəkədə Biz</h1>
-                <div class="social-icons">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-             <h1 class="connect">Əlaqə</h1>
-             <div class="comunucation">
-             <a href="#"><i class="fas fa-phone-alt"></i> (021) 27 5 28 45</a>
-             <a href="#"><i class="far fa-envelope"></i>Penacademy@mail.ru</a>
-            </div>
-            </div>
-            <div class="col-md-3">
-                <h1 class="connect">Ünvan</h1>
-                <p>Ağcəbədi rayonu, Faiq Əlizadə 1 (3 saylı məktəb liseyin yanı)</p>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Pen Akademiya Kursları © 2021. Bütün hüqüqlar qorunur.</p>
-    </div>
-</footer>
+<!-- Pagination -->
+<div class="pagination">
+    <!-- <li class="page-item previous-page disable"><a href="#" class="page-link">Öncəki</a></li>
+    <li class="page-item current-page active"><a href="#" class="page-link">1</a></li>
+    <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+    <li class="page-item current-page"><a href="#" class="page-link">5</a></li>
+    <li class="page-item current-page"><a href="#" class="page-link">6</a></li>
+    <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+    <li class="page-item current-page"><a href="#" class="page-link">10</a></li>
+    <li class="page-item next-page"><a href="#" class="page-link">Sonrakı</a></li> -->
+</div>
 
+
+
+     <!-- fOOTER -->
+     <footer class="teaching-footer">
+        <div class="container">
+            <div class="footer-row">
+               
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/pem-removebg-preview.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h1>Sosial Şəbəkədə Biz</h1>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                 <h1 class="connect">Əlaqə</h1>
+                 <div class="comunucation">
+                 <a href="#"><i class="fas fa-phone-alt"></i> (021) 27 5 28 45</a>
+                 <a href="#"><i class="far fa-envelope"></i>Pemacademy@mail.ru</a>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="connect">Ünvan</h1>
+                    <p>Ağcəbədi rayonu, Faiq Əlizadə 1 (3 saylı məktəb liseyin yanı)</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Pem Akademiya Kursları © 2021. Bütün hüqüqlar qorunur.</p>
+        </div>
+    </footer>
 
 
     <script src="index.js"></script>
+    <script src="js/pagination.js"></script>
 </body>
 </html>
