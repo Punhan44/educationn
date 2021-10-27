@@ -41,9 +41,6 @@ iframe {
     letter-spacing: 1.5px;
 }
 
-.icon-contact-text {
-    margin-left: 20 px;
-}
 
 .common:not(:nth-child(6)):after {
     content: "";
@@ -56,10 +53,18 @@ iframe {
 
 .common-enter {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-
+   
+}
+.icon-contact {
+    flex: 10%;
 }
 
+.icon-contact-text {
+    flex: 80%;
+}
 .icon-contact i {
     font-size: 24px;
     color: green;
