@@ -125,3 +125,40 @@ function showSlide(i){
 }
 
 
+const menubarJs=document.getElementById("menu-bar");
+const fai=document.getElementById("min-toggle");
+
+// menu.addEventListener("click",function(){
+//     if(menu.firstElementChild.classList.contains("fa-bars"))
+//     {
+//         menu.firstElementChild.classList.replace("fa-bars", "fa-times")
+//     }
+//    else{
+//     menu.firstElementChild.classList.replace("fa-times", "fa-bars")
+//    }
+
+//    sidebar.classList.toggle("show-sidebar")
+// })
+// fai.addEventListener("click",function(){
+// menubarJs.classList.toggle("show-ivener");
+// });
+
+
+const videoActive=document.querySelector(".video-active");
+const trailer=document.querySelector(".trailer");
+const close=document.querySelector(".close");
+const video=document.querySelector("video");
+
+videoActive.addEventListener('click',()=>{
+  trailer.style.visibility="visible";
+  trailer.style.opacity="1";
+
+})
+
+close.addEventListener('click',()=>{
+  trailer.style.visibility="hidden";
+  trailer.style.opacity="0";
+
+  video.pause();
+  video.currentTime=0;
+})
