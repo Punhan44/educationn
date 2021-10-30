@@ -610,7 +610,9 @@ span.close {
         max-width: 50%;
     }
 
-
+    span.close {
+        right: 2rem;
+    }
 
 
 }
@@ -725,6 +727,10 @@ span.close {
         pointer-events: none;
         transition: .3s;
     }
+    span.close {
+        right: 2rem;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -751,6 +757,9 @@ span.close {
         padding-bottom: 5rem;
         padding-left: 8px;
         color: #777;
+    }
+    span.close {
+        right: 2rem;
     }
 
 }
@@ -782,6 +791,9 @@ span.close {
         font-weight: 300;
         color: #000;
         line-height: 65px;
+    }
+    span.close {
+        right: 2rem;
     }
 }
 
@@ -815,6 +827,9 @@ span.close {
         font-weight: 300;
         color: #000;
         line-height: 65px;
+    }
+    span.close {
+        right: 2rem;
     }
 }
 
@@ -860,6 +875,19 @@ span.close {
         width: 27px;
         font-size: 18px;
     }
+
+    .video-img img {
+        height: 22rem;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    span.close {
+        right: 2rem;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -904,5 +932,28 @@ span.close {
     .right-button {
         width: 27px;
         font-size: 18px;
+    }
+
+    .video-img img {
+        height: 18rem;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    element.style {}
+
+    .video-active {
+        font-size: 27px;
+    }
+
+    span.close {
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        cursor: pointer;
     }
 }
